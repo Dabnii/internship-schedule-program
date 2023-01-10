@@ -1,0 +1,131 @@
+@import '/src/styles/variables.scss';
+@import '/src/styles/mixin.scss';
+
+body {
+  @include defaultFontSet(400);
+}
+
+.studioContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  top: 0;
+  position: absolute;
+
+  .studioBlockWrapper {
+    display: flex;
+    background-color: #f3f3f3;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    animation: fadeOut 0.7s ease-in-out;
+
+    .studioLeftSideNav {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 340px;
+      background-color: white;
+
+      .userInfo {
+        img {
+          width: 7.3rem;
+        }
+
+        .userName {
+          text-align: center;
+        }
+      }
+
+      .steps {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        a {
+          text-decoration: none;
+          color: none;
+
+          li {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            color: black;
+            margin-top: 1.3rem;
+
+            img {
+              width: 30px;
+              fill: $lightBlue;
+            }
+
+            &:hover {
+              font-weight: 700;
+              cursor: pointer;
+              position: relative;
+              color: $lightBlue;
+
+              &:active {
+                color: $lightBlue;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .studioBlockTitle {
+      display: flex;
+      color: black;
+      justify-content: space-between;
+
+      button {
+        appearance: unset;
+        border: none;
+        background-color: transparent;
+        font-weight: bold;
+        cursor: pointer;
+      }
+    }
+    .studioContainerBorder {
+      padding: 12rem 4rem;
+
+      .datasetTable {
+        width: 30rem;
+      }
+    }
+    .tagInput {
+      display: block;
+      padding-left: 14px;
+      margin-top: 20px;
+      padding-right: 0;
+      height: 40px;
+      border: 1px solid #e1effa;
+      background-color: white;
+      border-radius: 5px;
+      color: #000;
+      font-family: inherit;
+      font-size: 14px;
+      font-weight: bold;
+      transition: 0.6s fadeOut;
+    }
+
+    .autoDelAlign {
+      display: flex;
+      height: 200px;
+      margin-top: 19rem;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      flex-direction: row;
+      gap: 2rem;
+      margin-right: 3rem;
+    }
+  }
+}

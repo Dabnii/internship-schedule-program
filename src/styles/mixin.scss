@@ -1,0 +1,18 @@
+@keyframes fadeOut {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@mixin defaultFontSet($font-weight) {
+  font-family: 'gravesend-sans', sans-serif;
+  font-weight: $font-weight;
+  font-style: normal;
+}
+
+@mixin defaultBorderRadius() {
+  border-radius: 10px;
+}

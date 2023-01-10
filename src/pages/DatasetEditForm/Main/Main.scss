@@ -1,0 +1,73 @@
+@import '/src/styles/variables.scss';
+
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgb(83, 105, 217);
+  background: radial-gradient(
+    circle,
+    rgba(83, 105, 217, 1) 0%,
+    rgba(31, 50, 77, 1) 50%,
+    rgba(0, 0, 0, 1) 100%
+  );
+
+  p {
+    font-weight: 700;
+    font-size: 3rem;
+  }
+
+  h6 {
+    font-weight: 300;
+  }
+}
+
+.backGround {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  font-family: 'gravesend-sans', sans-serif;
+  font-weight: 700;
+  color: white;
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    font-weight: 400;
+    font-size: 0.9rem;
+
+    .navRightList {
+      display: flex;
+      flex-direction: row;
+      list-style-type: none;
+      gap: 1rem;
+    }
+  }
+
+  .mainContainer {
+    margin: 5rem;
+    height: 400px;
+    text-align: center;
+
+    .mainStartBtn {
+      appearance: unset;
+      flex-direction: column;
+      padding: 0.3rem 0.9rem;
+      margin-top: 2rem;
+      border: 1px solid transparent;
+      border-radius: 20px;
+      font-size: 1.5rem;
+      font-family: 'gravesend-sans', sans-serif;
+      font-weight: 700;
+      transition: 0.2s linear;
+
+      &:hover {
+        background-color: white;
+        cursor: pointer;
+      }
+    }
+  }
+}

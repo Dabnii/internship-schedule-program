@@ -1,0 +1,836 @@
+// @import "app/variables";
+
+// #app {
+//   height: 100%;
+
+//   .ant-layout {
+//     height: 100% !important;
+
+//     .ant-layout-content {
+//       height: 100%;
+//     }
+//   }
+// }
+// .ant-form-item-control {
+//   .ant-form-item-children {
+//     .ant-form-item-children-icon {
+//       display: none;
+//     }
+//   }
+
+//   &:before {
+//     display: none;
+//   }
+
+//   &:after {
+//     display: none;
+//   }
+
+//   .ant-form-item-children {
+//     &:after {
+//       display: none;
+//     }
+//   }
+// }
+
+// .ant-checkbox-inner {
+//   border: 1px solid #c7c8d3;
+//   background: #ffffff;
+//   border-radius: 0px;
+//   transition: all 0.3s;
+//   width: 14px;
+//   height: 14px;
+//   display: block;
+//   position: relative;
+// }
+// .ant-table-selection-column {
+//   text-align: center;
+// }
+// .ant-table-row td {
+//   text-align: left;
+//   padding-left: 15px;
+// }
+// .ant-checkbox-wrapper:hover .ant-checkbox-inner {
+//   border: 1px solid #59636d;
+// }
+// .ant-checkbox-inner:after {
+//   background-color: #00b6e8;
+// }
+// .ant-checkbox-checked .ant-checkbox-inner {
+//   border-color: #00b6e8;
+//   background-color: #00b6e8;
+// }
+// .ant-checkbox-input:focus + .ant-checkbox-inner {
+//   border-color: #00b6e8;
+// }
+// .ant-checkbox-checked:after {
+//   border: 1px solid #00b6e8;
+// }
+// .ant-checkbox-wrapper .ant-checkbox-inner:after {
+//   background-color: #00b6e8;
+// }
+// .ant-checkbox-wrapper:hover .ant-checkbox-inner,
+// .ant-checkbox-inner:after {
+//   border: 1px solid #00b6e8;
+//   background: #00b6e8;
+// }
+// .ant-checkbox-wrapper:hover .ant-checkbox-inner:after {
+//   background-color: #00b6e8;
+// }
+// .ant-checkbox-inner {
+//   -webkit-transition: all 0s;
+//   transition: all 0s;
+// }
+// .ant-checkbox-checked .ant-checkbox-inner:after {
+//   -webkit-transition: all 0s cubic-bezier(0.12, 0.4, 0.29, 1.46) 0s;
+//   transition: all 0s cubic-bezier(0.12, 0.4, 0.29, 1.46) 0s;
+// }
+// .ant-checkbox-inner:after {
+//   -webkit-transition: all 0.1s cubic-bezier(0.71, -0.46, 0.88, 0.6),
+//     opacity 0.1s;
+//   transition: all 0.1s cubic-bezier(0.71, -0.46, 0.88, 0.6), opacity 0.1s;
+// }
+// .ant-checkbox-indeterminate .ant-checkbox-inner:after {
+//   background-color: #fff;
+// }
+// .link {
+//   &.disabled {
+//     color: #7d8d9b;
+//   }
+//   &.link-light {
+//     &.disabled {
+//       color: #dadbdb;
+//       font-style: italic;
+//     }
+//   }
+// }
+
+// .bins-select {
+//   .ant-select-disabled {
+//     .ant-select-selection {
+//       opacity: 0.33 !important;
+//     }
+//   }
+//   .ant-form-item-children {
+//     line-height: 34px;
+//   }
+//   .ant-select-selection-selected-value {
+//     margin-left: 11px;
+//   }
+//   .ant-select-selection {
+//     background: #e2e2ea !important;
+//     color: #005c9b !important;
+//     border-color: #e2e2ea !important;
+//   }
+//   .ant-select {
+//     font-family: "Open Sans", sans-serif;
+//     font-size: 16px;
+//     min-width: auto !important;
+//     width: 80px;
+//   }
+//   .ant-select-focused .ant-select-selection,
+//   .ant-select-selection:focus {
+//     box-shadow: none;
+//     border-color: #005c9b;
+//   }
+//   .ant-select-open .ant-select-selection {
+//     box-shadow: none;
+//     border-color: #005c9b;
+//   }
+//   .ant-select-dropdown-menu-item,
+//   .ant-select-selection {
+//     border-radius: 0;
+//     border: 1px solid #005c9b;
+//     &--single {
+//       height: 30px;
+//     }
+//     &:hover {
+//       background: #e5eff5;
+//     }
+//   }
+//   .ant-select-arrow-icon {
+//     color: #005c9b;
+//   }
+//   .ant-select-dropdown {
+//     list-style: none;
+//     max-height: 300px;
+//     overflow-y: auto;
+
+//     .ant-select-dropdown-menu-item {
+//       text-align: left;
+//       cursor: pointer;
+//       transition: all 0.3s;
+//       border-top: 1px solid #9d9e9e;
+//     }
+//     .ant-select-dropdown-menu-item-active,
+//     .ant-select-dropdown-menu-item-selected {
+//       background: #ccdeeb;
+//     }
+
+//     &-menu {
+//       &-item:hover {
+//         background: #ccdeeb;
+//       }
+//     }
+//   }
+// }
+// .datasets_grid {
+//   .ant-table-body {
+//     overflow-x: scroll;
+//     max-height: 50vh;
+//     overflow-y: scroll;
+//     &::-webkit-scrollbar {
+//       width: 6px;
+//       height: 6px;
+//       border-radius: 60px;
+//     }
+//     &::-webkit-scrollbar-track {
+//       background: transparent;
+//     }
+//     &::-webkit-scrollbar-thumb {
+//       background: $light-blue;
+//     }
+//   }
+//   table td + th {
+//     border-right: 1px solid #9f9e9e;
+//   }
+//   .ant-table-body {
+//     &::-webkit-scrollbar {
+//       width: 6px;
+//       height: 6px;
+//       border-radius: 60px;
+//     }
+//     &::-webkit-scrollbar-track {
+//       background: transparent;
+//     }
+//     &::-webkit-scrollbar-thumb {
+//       background: $light-blue;
+//     }
+//   }
+//   .ant-table-body th {
+//     width: 1%;
+//     white-space: nowrap;
+//   }
+// }
+
+// .ant-table {
+//   .ant-table-body {
+//     th {
+//       span {
+//         -webkit-touch-callout: none; /* iOS Safari */
+//         -webkit-user-select: none; /* Safari */
+//         -khtml-user-select: none; /* Konqueror HTML */
+//         -moz-user-select: none; /* Firefox */
+//         -ms-user-select: none; /* Internet Explorer/Edge */
+//         user-select: none; /* Non-prefixed version, currently
+//                                       supported by Chrome and Opera */
+//       }
+//     }
+//   }
+// }
+
+// table .action .dropdown,
+// table td .dropdown {
+//   &.left {
+//     left: -12px;
+//   }
+// }
+
+// table td.left {
+//   .action__name {
+//     text-align: left;
+//   }
+// }
+
+// .ant-table-row td.left {
+//   text-align: left;
+// }
+
+// .relative {
+//   position: relative;
+// }
+
+// .loading-container {
+//   position: absolute;
+//   z-index: 1;
+//   width: 100%;
+//   height: 100%;
+//   align-items: center;
+//   justify-content: center;
+//   display: flex;
+//   background-color: rgba(255, 255, 255, 0.6);
+//   top: 0;
+//   right: 0;
+// }
+
+// .tab-menu__link {
+//   cursor: pointer;
+//   &.tab-menu__link_disable {
+//     color: #7d8d9b;
+//   }
+// }
+
+// .slider__line {
+//   background: transparent;
+// }
+
+// .table-column-hidden {
+//   display: none;
+// }
+
+// .text-wrapper {
+//   width: 100%;
+//   white-space: nowrap;
+//   overflow: hidden;
+//   text-overflow: ellipsis;
+// }
+
+// .wrapper {
+//   & > {
+//     header {
+//       z-index: 2;
+//     }
+//   }
+// }
+
+// .project-tree-section {
+//   background: #f2f2f2;
+//   margin-bottom: 15px;
+// }
+
+// .dataset-panel-radio-container {
+//   position: relative;
+//   width: 15px;
+//   height: 15px;
+
+//   input[type="radio"] {
+//     height: 15px;
+//     width: 15px;
+//     border-radius: 50%;
+//     border: 1px solid transparentize($dark-blue, 0.8);
+//     cursor: pointer;
+
+//     &:checked {
+//       background-color: $white;
+//     }
+//   }
+
+//   .check-inner {
+//     position: absolute;
+//     height: 7px;
+//     width: 7px;
+//     top: 4px;
+//     left: 4px;
+//     background-color: $dark-blue;
+//     border-radius: 50%;
+//   }
+// }
+
+// .ant-tooltip {
+//   z-index: 1149 !important;
+// }
+
+// body {
+//   overflow: hidden;
+
+//   #app {
+//     overflow: hidden;
+
+//     .wrapper {
+//       header {
+//         position: fixed;
+//         top: 0;
+//         left: 0;
+//         background: $main-bg-color;
+//         z-index: 1051;
+//       }
+
+//       .content {
+//         z-index: 1050;
+//         margin-top: 90px;
+//         overflow: hidden;
+//         padding-left: 110px;
+//         position: fixed;
+//         margin-bottom: 180px;
+//         height: calc(100vh - 90px);
+//         background-color: $main-bg-color;
+//         transition: $transition;
+
+//         main {
+//           margin-bottom: 0;
+//           padding: 0;
+//           overflow: auto;
+
+//           .main__wrapper {
+//             margin: 40px;
+//             min-width: 1100px;
+//             max-width: none;
+//             position: relative;
+
+//             > h1.blue,
+//             > .nav__part h1.blue {
+//               margin-top: 0;
+//             }
+//           }
+//         }
+//       }
+
+//       // styles for main layout, when the side menu is opened
+//       &.wrapper--menu-opened {
+//         .content {
+//           padding-left: 180px;
+//           transition: $transition;
+//           aside {
+//             min-width: 160px;
+//             width: 160px;
+//             transition: 0.5s all linear;
+//             .aside__wrapper {
+//               .aside__inner_wrapper {
+//                 .button {
+//                   &__icon {
+//                     transform: scale(-1, 1);
+//                     transition: $transition;
+//                   }
+//                 }
+//                 .aside-menu__link {
+//                   .aside-menu__caption {
+//                     margin: 5px 0 0;
+//                     opacity: 1;
+//                     transition: $transition;
+//                     white-space: nowrap;
+//                     height: auto;
+//                   }
+//                 }
+//               }
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+// .ant-notification.ant-notification-topRight {
+//   z-index: 1052;
+// }
+
+// .records-list-long-text-container {
+//   max-width: 200px;
+//   word-wrap: break-word;
+
+//   > span.ant-tooltip-open {
+//     display: block;
+//   }
+// }
+
+// .nav {
+//   .nav__col {
+//     .record-input-field-container {
+//       .ant-form-item-control.has-feedback.has-error {
+//         .ant-form-explain {
+//           padding-left: 0;
+//           padding-right: 0;
+//         }
+//       }
+
+//       .nav__input {
+//         margin-bottom: 10px;
+//       }
+
+//       &:first-child {
+//         margin-top: 10px;
+//         margin-bottom: 30px;
+//       }
+
+//       > .nav__item {
+//         &:first-child {
+//           padding-left: 0;
+//         }
+//       }
+//     }
+//   }
+// }
+
+// .icon_select2 {
+//   &.icon_select2__advanced_options {
+//     height: 8px;
+//     margin-top: 7px;
+//   }
+// }
+
+// .popup__title_grey {
+//   background: #847d7e;
+// }
+
+// .popup__button_grey {
+//   background: #847d7e;
+//   color: #ffffff;
+//   border-color: #847d7e;
+// }
+
+// .popup__button_grey:not(.button_disable):not(.button_noactive):hover {
+//   background: #847d7e;
+//   color: #ffffff;
+//   border-color: #847d7e;
+// }
+// .popup__button_grey:not(.button_disable):not(.button_noactive):active {
+//   background: #847d7e;
+//   color: #ffffff;
+//   border-color: #847d7e;
+// }
+
+// body.ja {
+//   font-family: "Roboto", sans-serif;
+
+//   .lang,
+//   .button,
+//   .slider__field,
+//   .form__field,
+//   .colorPicker__field,
+//   .form__field.select .ant-select-selection,
+//   nav,
+//   .form-textarea .ant-form-item-control .ant-input,
+//   .select-with-search-field-container .ant-form-item-children .ant-input,
+//   .model-source .ant-select,
+//   .filter__field,
+//   .form__field.select .ant-select-selection,
+//   .select-with-filter-field-container .ant-select,
+//   .form-select .ant-select,
+//   .form-select .ant-select-dropdown,
+//   .prediction-select .ant-select,
+//   .prediction-select .ant-select-dropdown,
+//   .select-with-search-container .ant-select,
+//   .model-insight-slider .min-max,
+//   .model-insight-time-series-analysis-container .ant-select,
+//   .model-insight-source-select-container .ant-select,
+//   .model-insight-select .ant-select,
+//   .custom-dataset-select .custom-dataset-dropdown-menu,
+//   .dataset-slider-field .ant-slider-mark,
+//   .dataset-select .ant-select,
+//   .select-container .ant-select-dropdown,
+//   .select-container .ant-select,
+//   .custom-range-picker-container .ant-calendar-picker .ant-input,
+//   .date-picker-control-container .ant-calendar-picker .ant-input,
+//   .custom-input-container .ant-input,
+//   .date-picker-control-container .ant-calendar-picker {
+//     font-family: "Roboto", sans-serif;
+//   }
+// }
+
+// // start custom styles for ant-table
+// .custom-table {
+//   .table:not(.table_simple):not(.table_border) {
+//     tr:nth-child(even) {
+//       background: none;
+//     }
+//   }
+//   .table {
+//     th {
+//       background: #fff;
+//       // color: $light-gray;
+//       color: $gray;
+//       border-right: 1px solid transparentize($main-black, 0.9);
+//       &:last-of-type {
+//         border-right: none;
+//       }
+
+//       &:first-of-type {
+//         padding-left: 0;
+//       }
+//     }
+
+//     td {
+//       color: $black;
+//       font-size: 14px;
+//       border-right: 1px solid transparentize($main-black, 0.9);
+
+//       &:last-of-type {
+//         border-right: none;
+//       }
+
+//       &:first-of-type {
+//         padding-left: 0;
+//       }
+
+//       &.middle {
+//         vertical-align: middle;
+//       }
+//     }
+
+//     table:not(.table_simple):not(.table_border) {
+//       tr:nth-child(even) {
+//         background: $white;
+//         transition: $transition;
+
+//         &:hover {
+//           background: $light-blue;
+//           transition: $transition;
+//           cursor: pointer;
+
+//           td {
+//             background: $light-blue;
+//           }
+//         }
+//       }
+//     }
+//     .ant-table-column-sorters {
+//       transition: $transition;
+//       color: $light-gray;
+//       &:hover {
+//         color: $blue;
+//         transition: $transition;
+//       }
+//     }
+//     thead {
+//       font-size: 11px;
+//       text-transform: uppercase;
+//       border-bottom: 1px solid transparentize($main-black, 0.9);
+
+//       tr {
+//         border: none;
+//       }
+//       // styles to center sortered header cell
+//       th.header-cell--center {
+//         &.ant-table-column-has-sorters {
+//           div.ant-table-column-sorters {
+//             display: flex;
+//             justify-content: center;
+//             align-content: center;
+
+//             transition: $transition;
+//             color: $light-gray;
+//             &:hover {
+//               color: $blue;
+//               transition: $transition;
+//             }
+//           }
+//           .ant-table-column-title {
+//             margin-right: 10px;
+//           }
+//           .ant-table-column-sorter {
+//             margin-left: 10px;
+//           }
+//         }
+//       }
+
+//       th.header-cell--start {
+//         &.ant-table-column-has-sorters {
+//           div.ant-table-column-sorters {
+//             display: flex;
+//             justify-content: flex-start;
+//             align-content: center;
+
+//             transition: $transition;
+//             color: $light-gray;
+//             &:hover {
+//               color: $blue;
+//               transition: $transition;
+//             }
+//           }
+//           .ant-table-column-title {
+//             margin-right: 10px;
+//           }
+//           .ant-table-column-sorter {
+//             margin-left: 10px;
+//           }
+//         }
+//       }
+//     }
+//   }
+//   table {
+//     .ant-table-tbody {
+//       .ant-table-row {
+//         border: none;
+//         transition: $transition;
+//         border-bottom: 1px solid transparentize($main-black, 0.9);
+//         background: $white;
+//         transition: $transition;
+
+//         &:last-of-type {
+//           border-right: none;
+//           border-bottom: none;
+//         }
+
+//         &:hover {
+//           background: $light-blue;
+//           cursor: pointer;
+//           transition: $transition;
+//         }
+//       }
+//     }
+//   }
+//   .ant-table-body {
+//     &::-webkit-scrollbar {
+//       width: 6px;
+//       height: 6px;
+//       border-radius: 60px;
+//     }
+//     &::-webkit-scrollbar-track {
+//       background: transparent;
+//     }
+//     &::-webkit-scrollbar-thumb {
+//       background: $light-blue;
+//     }
+//   }
+
+//   .ant-table-selection-column {
+//     .ant-checkbox-wrapper:hover {
+//       &:hover {
+//         .ant-checkbox-inner {
+//           background: $white;
+//           border-color: $light-blue;
+//           transition: $transition;
+//         }
+//       }
+//     }
+//     .ant-checkbox-checked {
+//       .ant-checkbox-inner {
+//         &:after {
+//           border-color: $green;
+//           background: $white;
+//           transition: $transition;
+//         }
+//       }
+//     }
+//     .ant-checkbox-inner {
+//       width: 16px;
+//       height: 16px;
+//       border-radius: 3px;
+//       border: 1px solid $dark-gray;
+//       background: $white;
+//       transition: $transition;
+//     }
+
+//     .ant-checkbox-indeterminate {
+//       .ant-checkbox-inner:after {
+//         background: $green;
+//         height: 2px;
+//       }
+//     }
+//   }
+
+//   &.custom-table--with-fixed-header {
+//     th {
+//       position: sticky;
+//       top: 0;
+//       z-index: 3;
+//       background: $white;
+
+//       &.dataset-index-cell,
+//       &.dataset-name-cell {
+//         z-index: 4;
+//       }
+//     }
+
+//     .decile-analisys-index {
+//       position: sticky;
+//       left: 0;
+//       z-index: 4;
+//       background: $white;
+//     }
+
+//     .decile-analisys-count {
+//       position: sticky;
+//       left: 45px;
+//       z-index: 4;
+//       background: $white;
+//     }
+
+//     .dataset-index-cell {
+//       position: sticky;
+//       left: 0;
+//       z-index: 2;
+
+//       .index-column {
+//         width: 45px;
+//       }
+//     }
+
+//     .dataset-name-cell {
+//       position: sticky;
+//       left: 45px;
+//       z-index: 2;
+//     }
+//   }
+// }
+// // end custom styles for ant-table
+
+// // .custom-table_left-aligned FOR TABLE WITH LEFT ALIGNING COLUMN
+// .custom-table_left-aligned {
+//   .models-list-table-container {
+//     .records-list-long-text-container {
+//       text-align: left;
+//     }
+//   }
+// }
+
+// .svg-icon * {
+//   transition: all 0s;
+// }
+
+// // ANT DROPDOWN
+// li.ant-dropdown {
+//   &-menu-item,
+//   &-submenu-title {
+//     padding: 10px 20px;
+//     color: $black;
+//     font-size: 14px;
+
+//     &:hover,
+//     &:active,
+//     &:focus {
+//       transition: $transition;
+//       background-color: $light-blue;
+//     }
+
+//     &.chosen {
+//       background: $main-bg-color;
+//     }
+//   }
+// }
+
+// ul.ant-dropdown-menu {
+//   box-shadow: $box-shadow;
+//   padding: 10px 0;
+// }
+
+// .ant-table-row {
+//   &.active-row {
+//     background: $light-blue !important;
+//     transition: $transition;
+//     &:hover {
+//       background: $light-blue !important;
+//       transition: $transition;
+//     }
+//   }
+// }
+
+// // scrollbar
+
+// .custom-scroll {
+//   &::-webkit-scrollbar {
+//     width: 6px;
+//     height: 6px;
+//     border-radius: 60px;
+//   }
+//   &::-webkit-scrollbar-track {
+//     background: transparent;
+//   }
+//   &::-webkit-scrollbar-thumb {
+//     background: $light-blue;
+//   }
+// }
+
+// .ant-select-dropdown-menu {
+//   &::-webkit-scrollbar {
+//     width: 6px;
+//     height: 6px;
+//     border-radius: 60px;
+//   }
+//   &::-webkit-scrollbar-track {
+//     background: transparent;
+//   }
+//   &::-webkit-scrollbar-thumb {
+//     background: $light-blue;
+//   }
+// }

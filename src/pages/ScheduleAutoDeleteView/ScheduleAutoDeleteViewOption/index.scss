@@ -1,0 +1,78 @@
+// @import 'app/variables';
+// @import '/src/styles/variables.scss';
+
+// .studio-del-container {
+//   margin-top: 60px;
+
+//   .studio-container_auto_del {
+//     margin-top: 15px;
+//     padding: 30px;
+//     border: none;
+//     border-radius: 20px;
+//     background-color: #fff;
+//     box-shadow: $box-shadow;
+
+//     .title-wrap {
+//       display: flex;
+//       justify-content: space-between;
+//       width: 320px;
+//       align-items: center;
+
+//       & {
+//         color: black;
+//         font-weight: bold;
+//       }
+//     }
+//   }
+
+//   .auto-del-box {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-around;
+//     height: 85px;
+//     margin-top: 18px;
+
+//     .total-wrap,
+//     .current-wrap {
+//       display: flex;
+//       width: 300px;
+//       justify-content: space-between;
+
+//       .total-wrap-text {
+//         color: black;
+//       }
+
+//       .total-wrap-num {
+//         color: grey;
+//         font-weight: bold;
+//       }
+//     }
+//     .keep-wrap {
+//       display: flex;
+//       width: 300px;
+//       justify-content: space-between;
+
+//       .keep-wrap-text {
+//         color: $grade8;
+//       }
+
+//       input[type='number'] {
+//         appearance: unset;
+//         border: 1px solid #e1effa;
+//         border-radius: 5px;
+//         text-align: center;
+//         font-weight: bold;
+//         color: $grade8;
+//         background-color: $field-bg;
+//       }
+//       input[type='number']::-webkit-inner-spin-button,
+//       input[type='number']::-webkit-outer-spin-button {
+//         opacity: 1;
+//         background-color: $field-bg;
+//       }
+//     }
+//     .current-num {
+//       font-weight: bold;
+//     }
+//   }
+// }

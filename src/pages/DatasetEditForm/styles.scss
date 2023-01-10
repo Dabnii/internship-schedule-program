@@ -1,0 +1,50 @@
+// @import "app/variables";
+// @import "/src/styles/mixin.scss";
+
+// .dataset-switch-field,
+// .scheduling-switch-field {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+
+//   &__section-title {
+//     margin: 0;
+//   }
+// }
+
+// .tabs_menu {
+//   .tabs-menu-wrap {
+//     display: flex;
+//     align-items: flex-end;
+//     margin: 5px 0 20px;
+//     color: $light-gray;
+
+//     button {
+//       margin-right: 20px;
+//       padding-bottom: 6px;
+//       font-size: 14px;
+//     }
+
+//     .tab-menu__item:active {
+//       position: relative;
+//       padding-left: 0;
+//       color: $dark-blue;
+
+//       :hover {
+//         color: rgba(0, 27, 74, 0.6);
+//       }
+
+//       ::after {
+//         content: "";
+//         position: absolute;
+//         bottom: -6px;
+//         left: 0;
+//         width: 65px;
+//         height: 2px;
+//         // border-radius: 10px;
+//         @include defaultBorderRadius;
+//         background: $dark-blue;
+//       }
+//     }
+//   }
+// }

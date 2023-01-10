@@ -1,0 +1,44 @@
+[
+  {
+    "key": 19,
+    "SCHEDULE_NAME": "test13",
+    "CREATED": "2023-07-06",
+    "SCHEDULE_TAG": "retraining"
+  },
+  {
+    "key": 99,
+    "SCHEDULE_NAME": "test00",
+    "CREATED": "2022-04-15",
+    "SCHEDULE_TAG": "batch"
+  },
+  {
+    "key": 3,
+    "SCHEDULE_NAME": "test229",
+    "CREATED": "2023-02-01",
+    "SCHEDULE_TAG": "retraining_batch"
+  },
+  {
+    "key": 4,
+    "SCHEDULE_NAME": "test8",
+    "CREATED": "2023-01-29",
+    "SCHEDULE_TAG": "batch"
+  },
+  {
+    "key": 7,
+    "SCHEDULE_NAME": "test5",
+    "CREATED": "2023-06-14",
+    "SCHEDULE_TAG": "batch"
+  },
+  {
+    "key": 10,
+    "SCHEDULE_NAME": "test6",
+    "CREATED": "2023-04-02",
+    "SCHEDULE_TAG": "retraining"
+  },
+  {
+    "key": 33,
+    "SCHEDULE_NAME": "test2",
+    "CREATED": "2023-02-27",
+    "SCHEDULE_TAG": "retraining"
+  }
+]

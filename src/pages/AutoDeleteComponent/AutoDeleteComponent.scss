@@ -1,0 +1,93 @@
+@import '/src/styles/variables.scss';
+
+.TotalContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 13rem;
+  height: 13rem;
+  border-radius: 10px;
+  padding: 27px;
+  background-color: white;
+
+  .TotalDataQuantity {
+    margin: 0;
+  }
+
+  .TotalDataQuantityWrapper {
+    display: flex;
+    justify-content: flex-end;
+
+    .AutoDeleteInputContainer {
+      position: static;
+    }
+
+    label {
+      height: 50%;
+      width: 50%;
+      border-bottom: 2px solid black;
+      padding-right: 20px;
+      background-image: url('../../../public/image/pencil.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    input[type='number'] {
+      -webkit-appearance: textfield;
+      -moz-appearance: textfield;
+      appearance: textfield;
+      animation: fadeOut 0.2s ease-in-out;
+      text-align: right;
+      border: none;
+      width: 8rem;
+      padding: 15px;
+      background-color: transparent;
+      font-family: inherit;
+      font-size: 2rem;
+      font-weight: 700;
+      position: relative;
+      -webkit-appearance: none;
+
+      &::-webkit-inner-spin-button,
+      &::-webkit-outer-spin-button {
+        opacity: 0;
+        -webkit-appearance: none;
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .circleDelete {
+      display: flex;
+      width: 3rem;
+      height: 3rem;
+      line-height: 3rem;
+      border-radius: 50%;
+      font-size: 40px;
+      color: black;
+      text-align: right;
+      background: $yellow;
+      justify-content: center;
+      align-items: center;
+
+      .btnContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        line-height: 0;
+
+        .increase,
+        .decrease {
+          background-color: transparent;
+          border: none;
+
+          &:hover {
+            color: $lightBlue;
+          }
+        }
+      }
+    }
+  }
+}
